@@ -46,7 +46,7 @@ public class TestJSEngine {
             log.info("Engine found: " + engineByName);
 
             // checking for the JavaScript engine native class
-            Class.forName("jdk.nashorn.api.scripting.NashornScriptEngine");
+            Class.forName("org.openjdk.nashorn.api.scripting.NashornScriptEngine");
             log.info("Engine class provider found.");
 
         } catch (ClassNotFoundException e) {
